@@ -89,11 +89,15 @@ class TypesExercisesTest extends AnyFunSpec with TypeCheckedTripleEquals {
     }
 
     it("should return a default on other inputs") {
-      ???
+      val str = showTrafficLightStr("karen")
+
+      assert(str === "The traffic light is invalid")
     }
 
     it("should show flashing") {
-      ???
+      val str = showTrafficLightStr("flashing")
+
+      assert(str === "the traffic light is flashing")
     }
 
   }
@@ -119,7 +123,9 @@ class TypesExercisesTest extends AnyFunSpec with TypeCheckedTripleEquals {
     }
 
     it("should show Flashing") {
-      ???
+      val str = showTrafficLight(Flashing)
+
+      assert(str === "The traffic light is flashing")
     }
 
   }
